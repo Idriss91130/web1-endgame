@@ -1,4 +1,4 @@
-# <img src="/logowitz.png"> WITZ.
+# WITZ. <img src="/logowitz.png">
 
 ## Présentation
 
