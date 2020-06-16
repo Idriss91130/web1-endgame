@@ -24,8 +24,8 @@ export default {
     width: 100%;
     background: rgba(33, 33, 33, 0.76);
 
-    img {
-        margin: 0 10px;
+    @media (max-width: 1000px) {
+        height: 40vh;
     }
 }
 
@@ -43,24 +43,6 @@ $bg-and-border: #ffffff;
     font-family: 'MetropolisLight';
 }
 
-.mouse {
-  display: inline-block;
-  height: 44px;
-  width: 28px;
-  border-radius: 12px;
-  border: 3px solid $bg-and-border;
-  text-align: center;
-  &:after {
-    display: inline-block;
-    height: 5px;
-    width: 5px;
-    background-color: $bg-and-border;
-    border-radius: 50%;
-    content: "";
-    animation: scroll 1.3s ease-out infinite forwards;
-  }
-}
-
 p {
     font-family: 'Metropolis';
     font-style: normal;
@@ -70,5 +52,10 @@ p {
     color: #FFFFFF;
     text-align: left;
     width: 81%;
+
+    @media (max-width: 1000px) {
+        font-size: 12px;
+        width: 95%;
+    }
 }
 </style>

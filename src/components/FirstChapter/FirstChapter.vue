@@ -38,7 +38,7 @@
 
 <script>
 import Title from '@/components/Title.vue'
-import ChapterText from '@/components/ChapterText.vue'
+import ChapterText from '@/components/FirstChapter/ChapterText.vue'
 
 
 export default {
@@ -82,6 +82,10 @@ export default {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 1000px) {
+        height: 120vh;
+    }
 }
 
 #chapter1 {
@@ -104,7 +108,6 @@ export default {
     position: fixed;
     z-index: -100;
     height: 5%;
-    transition: height 0.5s ease-in-out;
 }
 
 .photo_activate {
@@ -144,11 +147,10 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(33, 33, 33, 0.76);
+    background: rgba(33, 33, 33, 0.96);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: height 0.5s ease-out;
 
     img {
         cursor: pointer;

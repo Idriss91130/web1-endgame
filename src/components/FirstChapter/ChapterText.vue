@@ -1,5 +1,5 @@
 <template>
-    <div class="text_chapter">
+    <div class="text_chapter_FC">
         <p><img src="../../assets/up-chevron1.svg"/>{{ text }} <img src="../../assets/up-chevron2.svg"/></p>
     </div>
 </template>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
-.text_chapter {
+.text_chapter_FC {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +23,10 @@ export default {
     height: 30vh;
     width: 100%;
     background: rgba(33, 33, 33, 0.76);
+
+    @media (max-width: 1000px) {
+        height: 65vh;
+    }
 
     img {
         margin: 0 10px;
@@ -70,5 +74,17 @@ p {
     color: #FFFFFF;
     text-align: left;
     width: 81%;
+
+    img {
+        @media (max-width: 1000px) {
+            height: 15px;
+            width: 15px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        font-size: 12px;
+        width: 95%;
+    }
 }
 </style>

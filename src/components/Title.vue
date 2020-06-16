@@ -19,11 +19,16 @@ export default {
 
 <style lang="scss">
     .title {
-        width: 45%;
+        width: 40%;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
+
+        @media (max-width: 1000px) {
+            height: 30vh;
+            width: 80%;
+        }
     }
 
     h1 {
@@ -35,6 +40,11 @@ export default {
         text-align: center;
         color: #FFFFFF;
         width: 100%;
+
+        @media (max-width: 1000px) {
+            font-size: 80px;
+            line-height: 110px;
+        }
     }
 
     h2 {
@@ -46,6 +56,11 @@ export default {
         text-align: center;
         color: #FFFFFF;
         width: 100%;
+
+        @media (max-width: 1000px) {
+            font-size: 18px;   
+            line-height: 24px;
+        }
     }
 
     h3 {
@@ -57,6 +72,11 @@ export default {
         text-align: center;
         color: #FFFFFF;
         width: 100%;
+
+        @media (max-width: 1000px) {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 
     .line {

@@ -1,10 +1,10 @@
 <template>
-    <div class="SecondChapter">
+    <div class="Chapter">
         <div class="media4">
             <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
             <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
         </div>
-        <div id="chapter3" class="title_chapter">
+        <div id="chapter4" class="title_chapter">
             <Title chapter="IV" title_chapter="LES PORTES DE L’ENFER" date="octobre 1942"/>
             <ChapterText text="Le premier convoi de Juifs du Reich grand-allemand en provenance de Vienne et à destination 
             directe d' Auschwitz arriva le 18 juillet 1942. De la fin octobre 1942 jusqu'en janvier 1945, plus de 71 000 
@@ -55,12 +55,6 @@ export default {
 
 <style lang="scss">
 
-.SecondChapter {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
 .media4 {
     height: 110px;
     width: auto;
@@ -102,7 +96,6 @@ export default {
     position: fixed;
     z-index: -100;
     height: 5%;
-    transition: height 0.5s ease-in-out;
 }
 
 .photo_activate4 {
@@ -146,7 +139,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: height 0.5s ease-out;
 
     img {
         cursor: pointer;

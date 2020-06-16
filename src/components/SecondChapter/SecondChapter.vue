@@ -1,5 +1,5 @@
 <template>
-    <div class="SecondChapter">
+    <div class="Chapter">
         <div class="media2">
             <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
             <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
@@ -58,10 +58,14 @@ export default {
 
 <style lang="scss">
 
-.SecondChapter {
+.Chapter {
     width: 100%;
     height: 100vh;
     position: relative;
+
+    @media (max-width: 1000px) {
+        height: 120vh;
+    }
 }
 
 .media2 {
@@ -105,7 +109,6 @@ export default {
     position: fixed;
     z-index: -100;
     height: 5%;
-    transition: height 0.5s ease-in-out;
 }
 
 .photo_activate2 {
@@ -149,7 +152,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: height 0.5s ease-out;
 
     img {
         cursor: pointer;
