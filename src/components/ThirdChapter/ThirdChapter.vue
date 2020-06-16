@@ -64,7 +64,6 @@ export default {
     top: 5px;
     left: 10px;
     background: transparent;
-    z-index: 11;
 
     .photo {
         background-image: url("../../assets/photo.svg");
@@ -73,6 +72,8 @@ export default {
 
     .iconPhoto_activate {
         background-image: url("../../assets/photo_activate.svg");
+        z-index: 14;
+        position: fixed;
     }
 
     .video {
@@ -82,6 +83,9 @@ export default {
 
     .iconVideo_activate {
         background-image: url("../../assets/video_activate.svg");
+        z-index: 14;
+        position: fixed;
+        top: 60px;
     }
 
     .img_noactivate {
@@ -117,7 +121,7 @@ export default {
         width: 55px;
         position: fixed;
         top: 5px;
-        left: 65px;
+        right: 5px;
     }
 }
 
@@ -134,7 +138,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(33, 33, 33, 0.76);
+    background: rgba(33, 33, 33, 0.96);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,13 +148,18 @@ export default {
         height: 46px;
         width: 55px;
         position: fixed;
-        top: 60px;
-        left: 65px;
+        top: 5px;
+        right: 5px;
     }
 
     iframe {
         width: 50%;
         height: 70%;
+
+        @media (max-width: 1000px) {
+            width: 100%;
+            height: 50%;
+        }
     }
 }
 

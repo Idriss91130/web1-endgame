@@ -1,6 +1,6 @@
 <template>
     <div style="width: 100%; position: relative">
-        <div id="chapter1" class="title_chapter">
+        <div id="chapter1" class="title_chapter_FC">
             <div class="media">
                 <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
                 <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
@@ -74,6 +74,20 @@ export default {
     margin: 0;
 }
 
+.title_chapter_FC {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 750px) {
+        height: 130vh;
+    }
+}
+
 .title_chapter {
     width: 100%;
     height: 100vh;
@@ -83,8 +97,22 @@ export default {
     flex-direction: column;
     align-items: center;
 
-    @media (max-width: 1000px) {
-        height: 120vh;
+    @media (max-width: 750px) {
+        height: 100vh;
+    }
+}
+
+.title_chapter {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 750px) {
+        height: 100vh;
     }
 }
 
@@ -130,7 +158,7 @@ export default {
         width: 55px;
         position: fixed;
         top: 5px;
-        left: 65px;
+        right: 5px;
     }
 }
 
@@ -157,13 +185,17 @@ export default {
         height: 46px;
         width: 55px;
         position: fixed;
-        top: 60px;
-        left: 65px;
+        top: 5px;
+        right: 5px;
     }
 
     iframe {
         width: 50%;
         height: 70%;
+
+        @media (max-width: 1000px) {
+            width: 100%;
+        }
     }
 }
 
@@ -177,6 +209,17 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 12;
+
+    @media (max-width: 750px) {
+        width: 90%;
+        height: 65%;
+    }
+
+    @media (max-width: 1000px) {
+        height: 50vh;
+        width: 70%;
+    }
 
     h1 {
         font-family: "MetropolisBold";
@@ -184,6 +227,10 @@ export default {
         font-size: 36px;
         line-height: 49px;
         color: #FF0000;
+
+        @media (max-width: 750px) {
+            font-size: 30px;
+        }
     }
 
     p {
@@ -192,6 +239,11 @@ export default {
         font-size: 21px;
         line-height: 29px;
         color: #FFFFFF;
+
+        @media (max-width: 750px) {
+            font-size: 12px;
+            line-height: 20px;
+        }
     }
 }
 
@@ -205,7 +257,7 @@ export default {
     top: 5px;
     left: 10px;
     background: transparent;
-    z-index: 11;
+    
 
     .photo {
         background-image: url("../../assets/photo.svg");
@@ -214,6 +266,8 @@ export default {
 
     .iconPhoto_activate {
         background-image: url("../../assets/photo_activate.svg");
+        z-index: 14;
+        position: fixed;
     }
 
     .video {
@@ -223,6 +277,9 @@ export default {
 
     .iconVideo_activate {
         background-image: url("../../assets/video_activate.svg");
+        z-index: 14;
+        position: fixed;
+        top: 60px;
     }
 
     .img_noactivate {

@@ -25,9 +25,14 @@ export default {
         flex-direction: column;
         align-items: center;
 
-        @media (max-width: 1000px) {
-            height: 30vh;
+        @media (max-width: 750px) {
+            height: 35vh;
             width: 80%;
+        }
+
+        @media (max-width: 1000px) {
+            height: 35vh;
+            width: 60%;
         }
     }
 
@@ -41,7 +46,7 @@ export default {
         color: #FFFFFF;
         width: 100%;
 
-        @media (max-width: 1000px) {
+        @media (max-width: 750px) {
             font-size: 80px;
             line-height: 110px;
         }
@@ -57,7 +62,7 @@ export default {
         color: #FFFFFF;
         width: 100%;
 
-        @media (max-width: 1000px) {
+        @media (max-width: 750px) {
             font-size: 18px;   
             line-height: 24px;
         }
@@ -73,7 +78,7 @@ export default {
         color: #FFFFFF;
         width: 100%;
 
-        @media (max-width: 1000px) {
+        @media (max-width: 750px) {
             font-size: 16px;
             line-height: 20px;
         }

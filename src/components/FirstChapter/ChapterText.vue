@@ -24,7 +24,7 @@ export default {
     width: 100%;
     background: rgba(33, 33, 33, 0.76);
 
-    @media (max-width: 1000px) {
+    @media (max-width: 750px) {
         height: 65vh;
     }
 
@@ -76,13 +76,13 @@ p {
     width: 81%;
 
     img {
-        @media (max-width: 1000px) {
+        @media (max-width: 750px) {
             height: 15px;
             width: 15px;
         }
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 750px) {
         font-size: 12px;
         width: 95%;
     }
