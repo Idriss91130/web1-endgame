@@ -18,12 +18,13 @@
 
 ### Project setup
 ```
+git clone 
+```
+```
+cd web1-endgame
+```
+```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
 ```
 
 ### Compiles and minifies for production
