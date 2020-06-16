@@ -4,7 +4,7 @@
 
 Voici **WITZ.** le web documentaire qui retrace l'enfer qui s'est passé dans le camp de concentration Auschwitz-Birkenau. Vous pourrez retrouver des textes, des images ou des vidéos qui vous permettront de mieux comprendre ce qui est arrivé.
 
-Accéder au [site](https://witz-documentaire.netlify.app)
+Accéder au *[site](https://witz-documentaire.netlify.app)*
 
 ## Commandes pour démarrer le projet
 
@@ -19,9 +19,9 @@ npm install
 ```
 ## Documentation
 
-https://vuejs.org/
+[VueJs](https://vuejs.org/)
 
-https://router.vuejs.org/
+[Router VueJs](https://router.vuejs.org/)
 
 https://marozed.ma/vue-cheatsheet/
 
