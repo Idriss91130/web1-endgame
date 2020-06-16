@@ -2,14 +2,9 @@
 
 ## Présentation
 
+Voici **WITZ.** le web documentaire qui retrace l'enfer qui s'est passé dans le camp de concentration Auschwitz-Birkenau. Vous pourrez retrouver des textes, des images ou des vidéos qui vous permettront de mieux comprendre ce qui est arrivé.
+
 Accéder au [site](https://witz-documentaire.netlify.app)
-
-## Route
-
-| url      | nom      |
-| ---      | ---      |
-| /        | Homepage |
-| /team    | Team     |
 
 ## Commandes pour démarrer le projet
 
@@ -30,3 +25,9 @@ https://router.vuejs.org/
 
 https://marozed.ma/vue-cheatsheet/
 
+## Participants du projet
+
+- CHAIMI Elyas
+- COHEN Baptiste
+- FALL Idriss
+- ROCHE Lucas
