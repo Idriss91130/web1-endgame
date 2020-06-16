@@ -2,10 +2,7 @@
 
 ## Présentation
 
-- Babel (es6 syntax)
-- Vue.js
-  - Vue Router
-- Sass
+Accéder au [site](https://witz-documentaire.netlify.app)
 
 ## Route
 
@@ -16,7 +13,6 @@
 
 ## Commandes pour démarrer le projet
 
-### Cloner le repository et installer les dépendances
 ```
 git clone https://github.com/Idriss91130/web1-endgame.git
 ```
