@@ -200,10 +200,10 @@ export default {
 }
 
 .power {
-    background: rgba(33, 33, 33, 0.76);
+    background: rgba(33, 33, 33, 0.90);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 70%;
-    width: 35%;
+    height: 80%;
+    width: 36%;
     margin-right: 5%;
     display: flex;
     flex-direction: column;

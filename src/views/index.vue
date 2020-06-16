@@ -4,6 +4,7 @@
         <SecondChapter/>
         <ThirdChapter/>
         <FourthChapter/>
+        <navbar/>
     </div> 
 </template>
 
@@ -12,7 +13,7 @@ import FirstChapter from '@/components/FirstChapter/FirstChapter.vue'
 import SecondChapter from '@/components/SecondChapter/SecondChapter.vue'
 import ThirdChapter from '@/components/ThirdChapter/ThirdChapter.vue'
 import FourthChapter from '@/components/FourthChapter/FourthChapter.vue'
-
+import navbar from '@/components/navbar.vue'
 
 export default {
     name: 'index',
@@ -20,7 +21,8 @@ export default {
         FirstChapter,
         SecondChapter,
         ThirdChapter,
-        FourthChapter
+        FourthChapter,
+        navbar
     },
 }
 </script>
@@ -28,6 +30,7 @@ export default {
 <style lang="scss">
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 </style>
 

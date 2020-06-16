@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss">
     .title {
-        width: 40%;
+        width: 45%;
         display: flex;
         justify-content: space-between;
         flex-direction: column;

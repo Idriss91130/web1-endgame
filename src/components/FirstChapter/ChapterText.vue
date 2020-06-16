@@ -23,6 +23,7 @@ export default {
     height: 30vh;
     width: 100%;
     background: rgba(33, 33, 33, 0.76);
+    padding: 0 0 20px 0;
 
     @media (max-width: 750px) {
         height: 65vh;
