@@ -19,8 +19,6 @@ npm install
 ```
 ## Documentation
 
-<a href="https://vuejs.org/" target="_blank">VueJs</a>
-
 https://vuejs.org/
 
 https://router.vuejs.org/
