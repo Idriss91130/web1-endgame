@@ -19,7 +19,7 @@ npm install
 ```
 ## Documentation
 
-<a href="https://vuejs.org/" target = "_blank">VueJs</a>
+<a href="https://vuejs.org/" target="_blank">VueJs</a>
 
 https://vuejs.org/
 
