@@ -18,7 +18,7 @@
 
 ### Project setup
 ```
-git clone 
+git clone https://github.com/Idriss91130/web1-endgame.git
 ```
 ```
 cd web1-endgame
