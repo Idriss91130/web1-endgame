@@ -1,6 +1,6 @@
-# web1-endgame
+# <img src="/logowitz.png"> WITZ.
 
-## Stack du projet
+## Présentation
 
 - Babel (es6 syntax)
 - Vue.js
@@ -14,7 +14,7 @@
 | /        | Homepage |
 | /team    | Team     |
 
-## Command line pour démarrer le projet
+## Commandes pour démarrer le projet
 
 ### Project setup
 ```
