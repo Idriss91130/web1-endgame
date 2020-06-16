@@ -75,6 +75,7 @@
 
       &:hover {
         background-color: white;
+        border: red 3px solid;
         
         a {
           color: red;
@@ -97,6 +98,7 @@
 
         &:hover {
           color: red;
+          text-decoration: underline;
         }
       }
       &.isSelected a {
