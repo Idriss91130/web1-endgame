@@ -31,6 +31,10 @@ export default {
 html {
     scroll-behavior: smooth;
     overflow: hidden;
+
+    @media (max-width: 1000px) {
+        overflow: visible;
+    }
 }
 </style>
 

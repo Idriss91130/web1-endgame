@@ -15,16 +15,16 @@
       </div>
       <nav class="navBar__timeLine">
         <div @click="changePage(scroll * 10)" :class="page === 1 ? 'isSelected' : null">
-          <a href="#chapter1">I Discours d'Hitler devant le Reichstag  </a>
+          <a href="#chapter1">I - Discours d'Hitler devant le Reichstag  </a>
         </div>
         <div @click="changePage(scroll * 20)" :class="page === 2 ? 'isSelected' : null">
-          <a class="gang" href="#chapter2">II Discours d'Himmler  devant le Reichstag </a>
+          <a class="gang" href="#chapter2">II - Discours d'Himmler  devant le Reichstag </a>
         </div>
         <div @click="changePage(scroll * 30)" :class="page === 3 ? 'isSelected' : null">
-          <a href="#chapter3">III Le début de l'enfer </a>
+          <a href="#chapter3">III - Le début de l'enfer </a>
         </div>
         <div @click="changePage(scroll * 40)" :class="page === 4 ? 'isSelected' : null">
-          <a href="#chapter4">IV Les portes de l'enfer  </a>
+          <a href="#chapter4">IV - Les portes de l'enfer  </a>
         </div>
       </nav>
     </div>
@@ -39,6 +39,12 @@
 </script>
 
 <style lang="scss" scoped>
+
+.navBar {
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
 
 .navBar__container {
   position: fixed;
@@ -61,11 +67,21 @@
     transform: none;
     height: 150px;
      & nav div {
-       width: 175px;
-       height: 35px;
-       border-radius: 15px;
-       padding: 10px;
-       transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+      width: 175px;
+      height: 35px;
+      border-radius: 15px;
+      padding: 10px;
+      transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+
+      &:hover {
+        background-color: white;
+        
+        a {
+          color: red;
+        }
+      } 
+      
+
       & a {
         font-size: 16px;
         clip-path: none;
@@ -73,14 +89,14 @@
         opacity: 3; 
         left: 15px;
         top: 5px;
+        color: white;
         user-select: none;
         font-family: "Metropolis";
-        color: white;
         text-decoration: none;
         width: 15%;
 
         &:hover {
-          text-decoration: underline;
+          color: red;
         }
       }
       &.isSelected a {

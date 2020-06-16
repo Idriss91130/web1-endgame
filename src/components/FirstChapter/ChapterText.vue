@@ -31,6 +31,7 @@ export default {
 
     img {
         margin: 0 10px;
+        width: 15px;
     }
 }
 
