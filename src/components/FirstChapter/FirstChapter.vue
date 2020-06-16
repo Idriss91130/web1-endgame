@@ -117,11 +117,11 @@ export default {
 }
 
 #chapter1 {
-    background-image: url("../../assets/Hitler.png");
+    background-image: url("../../assets/hitler2.png");
 }
 
 #chapter2 {
-    background-image: url("../../assets/himmler.png");
+    background-image: url("../../assets/himmler4.png");
 }
 
 #chapter3 {
