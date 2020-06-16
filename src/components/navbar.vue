@@ -64,8 +64,8 @@
        width: 175px;
        height: 35px;
        border-radius: 15px;
-       padding: 5px;
-       transition: height 0.3s ease-in-out;
+       padding: 10px;
+       transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
       & a {
         font-size: 16px;
         clip-path: none;
@@ -123,7 +123,7 @@
   background-color: #FFFF;
   margin-left:55px ;
   margin-right: 55px;
-  margin-top: 14px;
+  margin-top: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

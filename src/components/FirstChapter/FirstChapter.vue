@@ -224,7 +224,7 @@ export default {
     h1 {
         font-family: "MetropolisBold";
         font-style: normal;
-        font-size: 36px;
+        font-size: 33px;
         line-height: 49px;
         color: #FF0000;
 
