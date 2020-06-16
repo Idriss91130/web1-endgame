@@ -74,6 +74,7 @@ export default {
         background-image: url("../../assets/photo_activate.svg");
         z-index: 14;
         position: fixed;
+        top: 5px;
     }
 
     .video {
