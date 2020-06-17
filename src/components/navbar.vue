@@ -1,6 +1,6 @@
 <template>
   <div class="navBar" @click="closeOverlay">
-    <img src="../assets/logowitz.png" alt="Sound" class="navBar__Witz" />
+    <a href="#video"><img src="../assets/logowitz.png" alt="Sound" class="navBar__Witz" /></a>
     <div class="navBar__container">
       <div>
         

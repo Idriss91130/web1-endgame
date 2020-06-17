@@ -253,7 +253,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 12;
+    z-index: 14;
 
     @media (max-width: 750px) {
         width: 90%;
