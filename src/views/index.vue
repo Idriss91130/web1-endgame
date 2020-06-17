@@ -1,5 +1,8 @@
 <template>
     <div width="100%">
+        <p class="disclaimer">Ce site a été réalisé à des fins pédagogiques dans le cadre du cursus Bachelor de l’école HETIC. Les contenus 
+            présentés n'ont pas fait l'objet d'une demande de droit d'utilisation. Ce site ne sera en aucun cas exploité à 
+            des fins commerciales et ne sera pas publié</p>
         <FirstChapter/>
         <SecondChapter/>
         <ThirdChapter/>
@@ -35,6 +38,17 @@ html {
     @media (max-width: 1000px) {
         overflow: visible;
     }
+}
+
+.disclaimer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8px;
+    color: burlywood;
+    z-index: 3000;
+    width: 100%;
 }
 </style>
 

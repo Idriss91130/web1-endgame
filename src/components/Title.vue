@@ -9,11 +9,21 @@
 
 <script>
 export default {
-  props: {
-    chapter: String,
-    title_chapter: String,
-    date: String
-  }
+    props: {
+        chapter: String,
+        title_chapter: String,
+        date: String
+    },
+    data: function (){
+        return {
+            info: null
+        }
+    },
+    mounted: {
+        // axios: 
+        //     .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+        //     .then(response => (this.info = response))
+    }
 }
 </script>
 

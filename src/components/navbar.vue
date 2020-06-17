@@ -146,6 +146,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 
   & div {
     background-color: red ;
@@ -153,7 +154,6 @@
     width: 15px;
     height: 15px;
     opacity: 1;
-    margin-top: -5px;
     border-radius: 50%;
     border: 1px solid ;
 

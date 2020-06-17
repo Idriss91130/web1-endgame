@@ -2,7 +2,7 @@
     <div>
         <div id="video" class="container" >
             <div class="containerVideo">
-                <video  class="video_intro" src="../assets/Auschwitz.mp4" controls>Auschwitz
+                <video autoplay="true" preload="auto" class="video_intro" src="../assets/Auschwitz.mp4" controls>Auschwitz
                 </video>
             </div>
             <div class="divButton"> 

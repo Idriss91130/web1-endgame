@@ -77,7 +77,7 @@ export default {
         background-image: url("../../assets/photo_activate.svg");
         z-index: 14;
         position: fixed;
-        top: 5px;
+        top: 20px;
     }
 
     .video {
@@ -129,8 +129,8 @@ export default {
         height: 46px;
         width: 55px;
         position: fixed;
-        top: 5px;
-        right: 5px;
+        top: 2.7%;
+        right: 1.1%;
     }
 }
 
@@ -162,8 +162,8 @@ export default {
         height: 46px;
         width: 55px;
         position: fixed;
-        top: 5px;
-        right: 5px;
+        top: 2.7%;
+        right: 1.1%;
     }
 
     iframe {

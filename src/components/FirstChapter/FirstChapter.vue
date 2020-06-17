@@ -52,7 +52,8 @@ export default {
     data: function() {
         return {
             activated_photo: false,
-            activated_video: false
+            activated_video: false,
+            info: null
         }
     },
     methods: {
@@ -64,9 +65,6 @@ export default {
         }
     }
 }
-
-
-
 
 </script>
 
@@ -195,8 +193,8 @@ export default {
         height: 46px;
         width: 55px;
         position: fixed;
-        top: 5px;
-        right: 5px;
+        top: 2.7%;
+        right: 1.1%;
     }
 }
 
@@ -228,8 +226,8 @@ export default {
         height: 46px;
         width: 55px;
         position: fixed;
-        top: 5px;
-        right: 5px;
+        top: 2.7%;
+        right: 1.7%;
     }
 
     iframe {
@@ -313,7 +311,7 @@ export default {
         background-image: url("../../assets/photo_activate.svg");
         z-index: 14;
         position: fixed;
-        top: 5px;
+        top: 2.7%;
     }
 
     .video {
