@@ -54,7 +54,7 @@
   flex-direction: row;;
   bottom: 0px;
   left: 0;
-  height: 12%;
+  height: 78px;
   width: 100%;
   background-color: rgba(40, 38, 38, 0.95);
   transition: height 0.3s;
