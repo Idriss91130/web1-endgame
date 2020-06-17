@@ -23,7 +23,7 @@ npm install
 
 [Router VueJs](https://router.vuejs.org/)
 
-https://marozed.ma/vue-cheatsheet/
+[Vue Cheatsheet](https://marozed.ma/vue-cheatsheet/)
 
 ## Participants du projet
 
