@@ -1,6 +1,6 @@
 <template>
   <div class="navBar" @click="closeOverlay">
-    <a href="#video"><img src="../assets/logowitz.png" alt="Sound" class="navBar__Witz" /></a>
+    <router-link to="/"><img src="../assets/logowitz.png" alt="Sound" class="navBar__Witz" /></router-link>
     <div class="navBar__container">
       <div>
         

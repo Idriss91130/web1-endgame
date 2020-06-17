@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Team from '../views/Team.vue'
-import index from '../views/index.vue'
+import Index from '../views/index.vue'
+import Videointro from '../views/Videointro.vue'
 
 Vue.use(VueRouter)
 
@@ -9,20 +9,19 @@ Vue.use(VueRouter)
 // Chaque route doivent avoir au minimum un path et un component associé
 const routes = [
   {
-    path: '/team',
-    name: 'Team',
-    component: Team
+    path: '/',
+    name: 'Videointro',
+    component: Videointro
   },
   {
-    path: '/index',
+    path: '/accueil',
     name: 'index',
-    component: index
+    component: Index
   }
 ]
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
   routes
 })
 

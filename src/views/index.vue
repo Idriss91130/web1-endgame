@@ -1,6 +1,5 @@
 <template>
     <div width="100%">
-        <Videointro/>
         <FirstChapter/>
         <SecondChapter/>
         <ThirdChapter/>
@@ -10,7 +9,6 @@
 </template>
 
 <script>
-import Videointro from '@/components/Videointro.vue'
 import FirstChapter from '@/components/FirstChapter/FirstChapter.vue'
 import SecondChapter from '@/components/SecondChapter/SecondChapter.vue'
 import ThirdChapter from '@/components/ThirdChapter/ThirdChapter.vue'
@@ -20,7 +18,6 @@ import navbar from '@/components/navbar.vue'
 export default {
     name: 'index',
     components: {
-        Videointro,
         FirstChapter,
         SecondChapter,
         ThirdChapter,

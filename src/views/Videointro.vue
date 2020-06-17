@@ -6,9 +6,9 @@
                 </video>
             </div>
             <div class="divButton"> 
-                <a href="#chapter1">
+                <router-link to="/accueil">
                     <button class="buttonSkip"><p>Skip ▼</p></button>
-                </a>
+                </router-link>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
 .divButton {
   position: fixed;
   top:0 ;
-  bottom: -59%;
+  bottom: -77%;
   left: 90%;
   right: 0;
   text-align: center;
