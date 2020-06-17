@@ -41,6 +41,7 @@
 <style lang="scss" scoped>
 
 .navBar {
+
   @media (max-width: 1000px) {
     display: none;
   }
@@ -53,7 +54,7 @@
   flex-direction: row;;
   bottom: 0px;
   left: 0;
-  height: 32px;
+  height: 12%;
   width: 100%;
   background-color: rgba(40, 38, 38, 0.95);
   transition: height 0.3s;
@@ -118,10 +119,10 @@
 .navBar__Witz {
   z-index: 11;
   position: fixed;
-  bottom: 12px;
+  bottom: 22px;
   left: 12px;
-  width: 50px;
-  height: 50px; 
+  width: 40px;
+  height: 40px; 
   transition: transform 0.1s;
   opacity: 0.8;
   user-select: none;
@@ -136,22 +137,22 @@
 }
 .navBar__timeLine {
   z-index: 5;
-  height: 3px;
+  height: 1px;
   width: 100%;
   background-color: #FFFF;
   margin-left:55px ;
   margin-right: 55px;
-  margin-top: 15px;
+  margin-top: 35px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 
   & div {
-    background-color:red ;
+    background-color: red ;
     right: 200%;
     width: 15px;
     height: 15px;
-    opacity: 0.9;
+    opacity: 1;
     margin-top: -5px;
     border-radius: 50%;
     border: 1px solid ;
@@ -171,12 +172,13 @@
   position: fixed;
   z-index: 2;
   right: 17px;
-  bottom: 12px;
+  bottom: 26px;
   width: 30px;
   height: 30px;
   cursor: pointer;
   opacity: 0.8;
   user-select: none;
+
   & img {
     width: 100%;
     height: 100%;

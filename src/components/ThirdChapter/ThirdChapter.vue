@@ -1,14 +1,16 @@
 <template>
-    <div class="Chapter">
-        <div class="media3">
-            <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
-            <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
-        </div>
-        <div id="chapter3" class="title_chapter">
-            <Title chapter="III" title_chapter="LE DEBUT DE L’ENFER" date="18 juillet 1942"/>
-            <ChapterText text=" Les Allemands déportèrent des Juifs âgés ou éminents d'Allemagne, d'Autriche, du Protectorat 
-            de Bohème Moravie et d'Europe orientale au ghetto de Theresienstadt, qui servit également de camp de transit pour 
-            les déportations plus à l'est, le plus souvent à Auschwitz-Birkenau."/>
+    <div id="chapter3" class="Chapter">
+        <div id="chapter3_contain" class="chapter_contain">
+            <div class="media3">
+                <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
+                <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
+            </div>
+            <div class="title_chapter">
+                <Title chapter="III" title_chapter="LE DEBUT DE L’ENFER" date="18 juillet 1942"/>
+                <ChapterText text=" Les Allemands déportèrent des Juifs âgés ou éminents d'Allemagne, d'Autriche, du Protectorat 
+                de Bohème Moravie et d'Europe orientale au ghetto de Theresienstadt, qui servit également de camp de transit pour 
+                les déportations plus à l'est, le plus souvent à Auschwitz-Birkenau."/>
+            </div>
         </div>
         <div class="photo_noactivate3" v-bind:class="{photo_activate3: activated_photo}">
             <img v-on:click="photo" src="../../assets/croix.svg">

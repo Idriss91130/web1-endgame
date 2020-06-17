@@ -1,14 +1,16 @@
 <template>
-    <div class="Chapter">
-        <div class="media2">
-            <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
-            <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
-        </div>
-        <div id="chapter2" class="title_chapter">
-            <Title chapter="II" title_chapter="DISCOURS D’HIMMLER DEVANT LE REICHSTAG " date="27 avril 1940"/>
-            <ChapterText text="Himmler donne l’ordre d’aménager un camp de concentration dans les anciennes casernes 
-            de l’artillerie polonaise à Oswiecim, rebaptisé Auschwitz. Construit par des Juifs de la ville requis par 
-            les nazis, le camp d’Auschwitz reçoit un premier transport de prisonniers polonais, le 14 juin 1940."/>
+    <div id="chapter2" class="Chapter">
+        <div id="chapter2_contain" class="chapter_contain">
+            <div class="media2">
+                <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
+                <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
+            </div>
+            <div class="title_chapter">
+                <Title chapter="II" title_chapter="DISCOURS D’HIMMLER DEVANT LE REICHSTAG " date="27 avril 1940"/>
+                <ChapterText text="Himmler donne l’ordre d’aménager un camp de concentration dans les anciennes casernes 
+                de l’artillerie polonaise à Oswiecim, rebaptisé Auschwitz. Construit par des Juifs de la ville requis par 
+                les nazis, le camp d’Auschwitz reçoit un premier transport de prisonniers polonais, le 14 juin 1940."/>
+            </div>
         </div>
         <div class="photo_noactivate2" v-bind:class="{photo_activate2: activated_photo}">
             <img v-on:click="photo" src="../../assets/croix.svg">
@@ -62,6 +64,10 @@ export default {
     width: 100%;
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 
     @media (max-width: 750px) {
         height: 100vh;

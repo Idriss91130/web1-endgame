@@ -20,10 +20,32 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 30vh;
+    height: 30%;
     width: 100%;
-    background: rgba(33, 33, 33, 0.76);
-    padding: 0 0 20px 0;
+    border-radius: 10px;
+
+    p {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 33px;
+    color: #FFFFFF;
+    text-align: left;
+    width: 90%;
+
+    img {
+        @media (max-width: 750px) {
+            height: 15px;
+            width: 15px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        font-size: 12px;
+        width: 95%;
+    }
+}
 
     @media (max-width: 750px) {
         height: 65vh;
@@ -67,26 +89,4 @@ $bg-and-border: #ffffff;
   }
 }
 
-p {
-    font-family: 'Metropolis';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 33px;
-    color: #FFFFFF;
-    text-align: left;
-    width: 81%;
-
-    img {
-        @media (max-width: 750px) {
-            height: 15px;
-            width: 15px;
-        }
-    }
-
-    @media (max-width: 750px) {
-        font-size: 12px;
-        width: 95%;
-    }
-}
 </style>

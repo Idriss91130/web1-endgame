@@ -40,8 +40,8 @@ export default {
         font-family: 'EbrimaBold';
         font-style: normal;
         font-weight: bold;
-        font-size: 144px;
-        line-height: 150px;
+        font-size: 130px;
+        line-height: 140px;
         text-align: center;
         color: #FFFFFF;
         width: 100%;

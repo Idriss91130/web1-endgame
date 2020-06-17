@@ -1,14 +1,16 @@
 <template>
-    <div class="Chapter">
-        <div class="media4">
-            <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
-            <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
-        </div>
-        <div id="chapter4" class="title_chapter">
-            <Title chapter="IV" title_chapter="LES PORTES DE L’ENFER" date="octobre 1942"/>
-            <ChapterText text="Le premier convoi de Juifs du Reich grand-allemand en provenance de Vienne et à destination 
-            directe d' Auschwitz arriva le 18 juillet 1942. De la fin octobre 1942 jusqu'en janvier 1945, plus de 71 000 
-            Juifs qui restaient dans le Reich grand-allemand furent déportés à Auschwitz-Birkenau."/>
+    <div id="chapter4" class="Chapter">
+        <div id="chapter4_contain" class="chapter_contain">
+            <div class="media4">
+                <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
+                <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
+            </div>
+            <div class="title_chapter">
+                <Title chapter="IV" title_chapter="LES PORTES DE L’ENFER" date="octobre 1942"/>
+                <ChapterText text="Le premier convoi de Juifs du Reich grand-allemand en provenance de Vienne et à destination 
+                directe d' Auschwitz arriva le 18 juillet 1942. De la fin octobre 1942 jusqu'en janvier 1945, plus de 71 000 
+                Juifs qui restaient dans le Reich grand-allemand furent déportés à Auschwitz-Birkenau."/>
+            </div>
         </div>
         <div class="photo_noactivate4" v-bind:class="{photo_activate4: activated_photo}">
             <img v-on:click="photo" src="../../assets/croix.svg">

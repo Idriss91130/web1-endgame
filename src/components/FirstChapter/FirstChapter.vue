@@ -1,17 +1,19 @@
 <template>
     <div style="width: 100%; position: relative">
         <div id="chapter1" class="title_chapter_FC">
-            <div class="media">
-                <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
-                <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
+            <div id="chapter1_contain" class="chapter_contain">
+                <div class="media">
+                    <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
+                    <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
+                </div>
+                <Title chapter="I" title_chapter="DISCOURS D’HITLER DEVANT LE REICHSTAG" date="30 janvier 1939"/>
+                <ChapterText text="Nous avons des centaines de milliers d'enfants de paysans et des classes laborieuses 
+                très intelligents. Nous devons les éduquer - en fait nous avons déjà commencé - et nous souhaitons qu'un
+                jour, eux et non les représentants d'une race étrangère, puisse occuper les positions dominantes de l'Etat
+                en même temps que nos classes éduquées. Et surtout, la culture allemande, comme en témoigne son nom seul, 
+                est allemande et non juive, et c'est pourquoi sa direction et sa gestion seront confiées à des membres de 
+                notre nation." />
             </div>
-            <Title chapter="I" title_chapter="DISCOURS D’HITLER DEVANT LE REICHSTAG" date="30 janvier 1939"/>
-            <ChapterText text="Nous avons des centaines de milliers d'enfants de paysans et des classes laborieuses 
-            très intelligents. Nous devons les éduquer - en fait nous avons déjà commencé - et nous souhaitons qu'un
-             jour, eux et non les représentants d'une race étrangère, puisse occuper les positions dominantes de l'Etat
-              en même temps que nos classes éduquées. Et surtout, la culture allemande, comme en témoigne son nom seul, 
-              est allemande et non juive, et c'est pourquoi sa direction et sa gestion seront confiées à des membres de 
-              notre nation." />
         </div>
         <div class="photo_noactivate" v-bind:class="{photo_activate: activated_photo}">
             <img v-on:click="photo" src="../../assets/croix.svg">
@@ -88,9 +90,24 @@ export default {
     }
 }
 
+.chapter_contain {
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+    height: 85%;
+    border-radius: 10px;
+    margin-top: 1%;
+    background-size: cover;
+}
+
 .title_chapter {
     width: 100%;
     height: 100vh;
+    margin-top: 1%;
     background-size: cover;
     display: flex;
     justify-content: space-between;
@@ -117,18 +134,34 @@ export default {
 }
 
 #chapter1 {
-    background-image: url("../../assets/hitler2.png");
+    background: #141414;
 }
 
 #chapter2 {
-    background-image: url("../../assets/himmler4.png");
+    background: #141414;
 }
 
 #chapter3 {
-    background-image: url("../../assets/enfer.png");
+    background: #141414;
 }
 
 #chapter4 {
+    background: #141414;
+}
+
+#chapter1_contain {
+    background-image: url("../../assets/hitler2.png");
+}
+
+#chapter2_contain {
+    background-image: url("../../assets/himmler4.png");
+}
+
+#chapter3_contain {
+    background-image: url("../../assets/enfer.png");
+}
+
+#chapter4_contain {
     background-image: url("../../assets/portesenfer.png");
 }
 
@@ -202,8 +235,9 @@ export default {
 .power {
     background: rgba(33, 33, 33, 0.90);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 80%;
+    height: 70%;
     width: 36%;
+    padding: 0 20px;
     margin-right: 5%;
     display: flex;
     flex-direction: column;
