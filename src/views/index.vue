@@ -48,7 +48,7 @@ html {
     transform: translateX(-50%);
     font-size: 8px;
     color: burlywood;
-    z-index: 3000;
+    z-index: 12;
     width: 100%;
 
     @media (max-width: 1000px) {
