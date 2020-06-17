@@ -84,7 +84,7 @@ export default {
     align-items: center;
 
     @media (max-width: 1000px) {
-        height: 100%;
+        height: 100vh;
     }
 }
 
@@ -100,6 +100,10 @@ export default {
     border-radius: 10px;
     margin-top: 1%;
     background-size: cover;
+
+    @media (max-width: 1000px) {
+        height: 100%;
+    }
 }
 
 .title_chapter {

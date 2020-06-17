@@ -70,7 +70,7 @@ export default {
     align-items: center;
 
     @media (max-width: 1000px) {
-        height: 100%;
+        height: 100vh;
     }
 }
 

@@ -8,6 +8,7 @@
         <ThirdChapter/>
         <FourthChapter/>
         <navbar/>
+        
     </div> 
 </template>
 
@@ -49,6 +50,11 @@ html {
     color: burlywood;
     z-index: 3000;
     width: 100%;
+
+    @media (max-width: 1000px) {
+        top: auto;
+        bottom: 0;
+    }
 }
 </style>
 
