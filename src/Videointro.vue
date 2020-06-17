@@ -2,7 +2,7 @@
     <div>
         <div class="container" >
             <div class="containerVideo">
-                <video class="video" src="@/assets/Auschwitz.mp4" controls loop >Auschwitz
+                <video class="video" src="./assets/Auschwitz.mp4" controls loop >Auschwitz
                 </video>
             </div>
             <div class="divButton"> 
