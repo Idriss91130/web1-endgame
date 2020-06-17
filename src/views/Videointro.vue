@@ -18,17 +18,39 @@
 </script>
 
 <style lang="scss">
+
+body {
+    background: black;
+}
+
+.containerVideo {
+    @media (max-width: 1000px) {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
  
 .container {
     position: relative;
     width: 100%;
     height: 110vh;
+
+    @media (max-width: 1000px) {
+        height: 100vh;
+    }
 }
 
 .video_intro {
     z-index: 30;
     width: 100%;
     height: 100%;
+
+    @media (max-width: 1000px) {
+        height: 80%;
+    }
 }
 
 .divButton {
@@ -38,6 +60,11 @@
   left: 90%;
   right: 0;
   text-align: center;
+
+    @media (max-width: 1000px) {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .divButton::before{
