@@ -85,8 +85,8 @@ export default {
     flex-direction: column;
     align-items: center;
 
-    @media (max-width: 750px) {
-        height: 130vh;
+    @media (max-width: 1000px) {
+        height: 100%;
     }
 }
 
@@ -114,8 +114,8 @@ export default {
     flex-direction: column;
     align-items: center;
 
-    @media (max-width: 750px) {
-        height: 100vh;
+    @media (max-width: 1000px) {
+        height: 100%;
     }
 }
 
@@ -128,8 +128,8 @@ export default {
     flex-direction: column;
     align-items: center;
 
-    @media (max-width: 750px) {
-        height: 100vh;
+    @media (max-width: 1000px) {
+        height: 100%;
     }
 }
 
@@ -186,6 +186,10 @@ export default {
     align-items: flex-end;
     justify-content: center;
 
+    @media (max-width: 1000px) {
+        height: 100%;
+    }
+
     img {
         cursor: pointer;
         height: 46px;
@@ -214,6 +218,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 1000px) {
+        height: 100%;
+    }
 
     img {
         cursor: pointer;
