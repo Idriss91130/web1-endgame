@@ -249,6 +249,7 @@ export default {
     width: 36%;
     padding: 0 20px;
     margin-right: 5%;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
