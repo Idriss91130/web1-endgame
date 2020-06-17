@@ -107,10 +107,11 @@ export default {
 .photo_activate3 {
     z-index: 10;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 2%;
+    left: 1%;
+    width: 98%;
+    height: 85%;
+    border-radius: 10px;
     background-image: url("../../assets/detenusblock2.jpg");
     background-size: cover;
     display: flex;
@@ -137,10 +138,11 @@ export default {
 .video_activate3 {
     z-index: 10;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 2%;
+    left: 1%;
+    width: 98%;
+    height: 85%;
+    border-radius: 10px;
     background: rgba(33, 33, 33, 0.96);
     display: flex;
     justify-content: center;

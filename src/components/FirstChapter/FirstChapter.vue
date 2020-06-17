@@ -14,18 +14,18 @@
                 est allemande et non juive, et c'est pourquoi sa direction et sa gestion seront confiées à des membres de 
                 notre nation." />
             </div>
-        </div>
-        <div class="photo_noactivate" v-bind:class="{photo_activate: activated_photo}">
-            <img v-on:click="photo" src="../../assets/croix.svg">
-            <div class="power">
-                <h1>Prise de Pouvoir 1933-1934</h1>
-                <p>D’abord freiné par la prospérité des années 1920, le parti nazi est ensuite servi par les conséquences de
-                    la crise de 1929. Hitler cultive l’ambiguïté pour puiser des voix dans tous les groupes sociaux : 
-                    chômeurs, ouvriers, petits bourgeois, enseignants, grande bourgeoisie d’affaires. 
-                    Le 30 janvier 1933, il devient chancelier du Reich et, le 2 août 1934, président. 
-                    Entre ces deux dates, il a réduit à néant toute forme d’opposition (camps de concentration), 
-                    pris les premières mesures antisémites et doublé les institutions de la république d'organes et 
-                    d’agents nazis.</p>
+            <div class="photo_noactivate" v-bind:class="{photo_activate: activated_photo}">
+                <img v-on:click="photo" src="../../assets/croix.svg">
+                <div class="power">
+                    <h1>Prise de Pouvoir 1933-1934</h1>
+                    <p>D’abord freiné par la prospérité des années 1920, le parti nazi est ensuite servi par les conséquences de
+                        la crise de 1929. Hitler cultive l’ambiguïté pour puiser des voix dans tous les groupes sociaux : 
+                        chômeurs, ouvriers, petits bourgeois, enseignants, grande bourgeoisie d’affaires. 
+                        Le 30 janvier 1933, il devient chancelier du Reich et, le 2 août 1934, président. 
+                        Entre ces deux dates, il a réduit à néant toute forme d’opposition (camps de concentration), 
+                        pris les premières mesures antisémites et doublé les institutions de la république d'organes et 
+                        d’agents nazis.</p>
+                </div>
             </div>
         </div>
         <div v-bind:class="{video_activate: activated_video}" class="video_noactivate">
@@ -98,7 +98,7 @@ export default {
     flex-direction: column;
     align-items: center;
     width: 98%;
-    height: 85%;
+    height: 84.9%;
     border-radius: 10px;
     margin-top: 1%;
     background-size: cover;
@@ -174,10 +174,11 @@ export default {
 .photo_activate {
     z-index: 10;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 2%;
+    left: 1%;
+    width: 98%;
+    height: 85%;
+    border-radius: 10px;
     background-image: url("../../assets/hitler_photo.png");
     background-size: cover;
     display: flex;
@@ -204,10 +205,11 @@ export default {
 .video_activate {
     z-index: 10;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 2%;
+    left: 1%;
+    width: 98%;
+    height: 85%;
+    border-radius: 10px;
     background: rgba(33, 33, 33, 0.96);
     display: flex;
     justify-content: center;
@@ -235,7 +237,7 @@ export default {
 .power {
     background: rgba(33, 33, 33, 0.90);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 70%;
+    height: 80%;
     width: 36%;
     padding: 0 20px;
     margin-right: 5%;
