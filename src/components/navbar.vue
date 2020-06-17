@@ -72,7 +72,7 @@
       height: 35px;
       border-radius: 15px;
       padding: 10px;
-      transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+      transition: height 0.2s ease-in-out;
 
       &:hover {
         background-color: white;
