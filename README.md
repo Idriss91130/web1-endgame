@@ -17,6 +17,9 @@ cd web1-endgame
 ```
 npm install
 ```
+```
+npm run serve
+```
 ## Documentation
 
 [VueJs](https://vuejs.org/)
