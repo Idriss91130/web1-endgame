@@ -264,7 +264,7 @@ export default {
     }
 
     @media (max-width: 1000px) {
-        height: 50vh;
+        height: 75vh;
         width: 70%;
     }
 
@@ -276,7 +276,7 @@ export default {
         color: #FF0000;
 
         @media (max-width: 750px) {
-            font-size: 30px;
+            font-size: 20px;
         }
     }
 

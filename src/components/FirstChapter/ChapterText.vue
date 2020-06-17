@@ -34,18 +34,18 @@ export default {
     text-align: left;
     width: 90%;
 
-    img {
+        img {
+            @media (max-width: 750px) {
+                height: 15px;
+                width: 15px;
+            }
+        }
+
         @media (max-width: 750px) {
-            height: 15px;
-            width: 15px;
+            font-size: 11px;
+            width: 95%;
         }
     }
-
-    @media (max-width: 750px) {
-        font-size: 12px;
-        width: 95%;
-    }
-}
 
     @media (max-width: 750px) {
         height: 65vh;
