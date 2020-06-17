@@ -21,7 +21,7 @@
         </div>
         <div v-bind:class="{video_activate3: activated_video}" class="video_noactivate3">
             <img v-on:click="video" src="../../assets/croix.svg">
-            <iframe src="https://www.youtube.com/embed/GTFCkVQQPX8" frameborder="0" 
+            <iframe src="https://www.youtube.com/embed/mNaGaknaalk?start=134" frameborder="0" 
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>

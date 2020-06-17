@@ -30,8 +30,8 @@
         </div>
         <div v-bind:class="{video_activate: activated_video}" class="video_noactivate">
             <img v-on:click="video" src="../../assets/croix.svg">
-            <iframe src="https://www.youtube.com/embed/XgvqaLFZWM4" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/i9aHGvpe2V0" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </template>
