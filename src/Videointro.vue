@@ -2,7 +2,7 @@
     <div>
         <div class="container" >
             <div class="containerVideo">
-                <video class="video" src="./assets/Auschwitz.mp4" controls loop >Auschwitz
+                <video class="video" src="@/assets/Auschwitz.mp4" controls loop >Auschwitz
                 </video>
             </div>
             <div class="divButton"> 
@@ -40,11 +40,8 @@
 .divButton::before{
     content: ' ';
     display: block;
-    
-    height: 50%;
-    
+    height: 50%;   
 }
-
  .buttonSkip {
     font-family: "Ebrima";
     border: none;
@@ -55,11 +52,10 @@
     background-color:initial ;
     max-height: 100px;
     opacity: 0.7;
-    transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s; 
   transition-duration: 0.4s;
   text-decoration: none;
   cursor: pointer;
-
 
     & a {
     display: flex;
