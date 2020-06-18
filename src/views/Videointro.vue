@@ -7,7 +7,7 @@
             </div>
             <div class="divButton"> 
                 <router-link to="/accueil">
-                    <button class="buttonSkip"><p>Passez ▼</p></button>
+                    <button class="buttonSkip"><p>Passer ▼</p></button>
                 </router-link>
             </div>
         </div>
