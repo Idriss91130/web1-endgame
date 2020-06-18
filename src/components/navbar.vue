@@ -14,9 +14,11 @@
       class="song"
       ref="audio"
       autoplay
-      src="../assets/music/musikterrif.mp3">
+      src="../assets/musikterrif.mp3">
         <img src="../assets/Audio.png" alt="Sound" class="navBar__Sound" />
-    </audio>
+      </audio>
+        <img src="../assets/Audio.png" alt="Sound" class="navBar__Sound" />
+      
       </div>
       <nav class="navBar__timeLine">
         <div @click="changePage(scroll * 10)" :class="page === 1 ? 'isSelected' : null">
@@ -183,7 +185,7 @@ export default {
     }
   }
 }
-.navBar__containerVolumeLogo {
+.navBar__VolumeLogo {
   position: fixed;
   z-index: 2;
   right: 17px;
