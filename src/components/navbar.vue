@@ -5,13 +5,18 @@
       <div>
         
       </div>
-            <div
-        class="navBar__containerVolumeLogo"
+                  <div
+        class="navBar__VolumeLogo"
         @click="toggleMute"
-        :class="isMute ? 'isMute' : null"
-        v-show="page !== 4">
+        :class="isMute ? 'isMute' : null">
         
-        <img src="../assets/Audio.png" alt="Witz" class="navBar__Sound" />
+        <audio
+      class="song"
+      ref="audio"
+      autoplay
+      src="../assets/music/musikterrif.mp3">
+        <img src="../assets/Audio.png" alt="Sound" class="navBar__Sound" />
+    </audio>
       </div>
       <nav class="navBar__timeLine">
         <div @click="changePage(scroll * 10)" :class="page === 1 ? 'isSelected' : null">
@@ -35,7 +40,17 @@
 <script>
 
 
-
+export default {
+  methods: {
+      toggleMute() {
+      this.isMute = !this.isMute;
+      this.$refs.audio.muted = !this.$refs.audio.muted;
+  },
+   mounted() {
+    this.$refs.audio.volume = 0.2;
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
