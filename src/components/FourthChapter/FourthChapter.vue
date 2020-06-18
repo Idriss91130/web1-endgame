@@ -1,14 +1,16 @@
 <template>
-    <div class="SecondChapter">
-        <div class="media4">
-            <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
-            <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
-        </div>
-        <div id="chapter3" class="title_chapter">
-            <Title chapter="IV" title_chapter="LES PORTES DE L’ENFER" date="octobre 1942"/>
-            <ChapterText text="Le premier convoi de Juifs du Reich grand-allemand en provenance de Vienne et à destination 
-            directe d' Auschwitz arriva le 18 juillet 1942. De la fin octobre 1942 jusqu'en janvier 1945, plus de 71 000 
-            Juifs qui restaient dans le Reich grand-allemand furent déportés à Auschwitz-Birkenau."/>
+    <div id="chapter4" class="Chapter">
+        <div id="chapter4_contain" class="chapter_contain">
+            <div class="media4">
+                <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
+                <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
+            </div>
+            <div class="title_chapter">
+                <Title chapter="IV" title_chapter="LES PORTES DE L’ENFER" date="octobre 1942"/>
+                <ChapterText text="Le premier convoi de Juifs du Reich grand-allemand en provenance de Vienne et à destination 
+                directe d' Auschwitz arriva le 18 juillet 1942. De la fin octobre 1942 jusqu'en janvier 1945, plus de 71 000 
+                Juifs qui restaient dans le Reich grand-allemand furent déportés à Auschwitz-Birkenau."/>
+            </div>
         </div>
         <div class="photo_noactivate4" v-bind:class="{photo_activate4: activated_photo}">
             <img v-on:click="photo" src="../../assets/croix.svg">
@@ -20,7 +22,7 @@
         </div>
         <div v-bind:class="{video_activate4: activated_video}" class="video_noactivate4">
             <img v-on:click="video" src="../../assets/croix.svg">
-            <iframe src="https://www.youtube.com/embed/THNjSN5UanI" frameborder="0" 
+            <iframe src="https://www.youtube.com/embed/w_fu9_Pqyt0" frameborder="0" 
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
@@ -55,12 +57,6 @@ export default {
 
 <style lang="scss">
 
-.SecondChapter {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
 .media4 {
     height: 110px;
     width: auto;
@@ -71,7 +67,6 @@ export default {
     top: 5px;
     left: 10px;
     background: transparent;
-    z-index: 11;
 
     .photo {
         background-image: url("../../assets/photo.svg");
@@ -80,6 +75,9 @@ export default {
 
     .iconPhoto_activate {
         background-image: url("../../assets/photo_activate.svg");
+        z-index: 14;
+        position: fixed;
+        top: 20px;
     }
 
     .video {
@@ -89,6 +87,9 @@ export default {
 
     .iconVideo_activate {
         background-image: url("../../assets/video_activate.svg");
+        z-index: 14;
+        position: fixed;
+        top: 60px;
     }
 
     .img_noactivate {
@@ -102,30 +103,34 @@ export default {
     position: fixed;
     z-index: -100;
     height: 5%;
-    transition: height 0.5s ease-in-out;
 }
 
 .photo_activate4 {
     z-index: 10;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../../assets/entree.png");
+    top: 2%;
+    left: 1%;
+    width: 98%;
+    height: 85%;
+    border-radius: 10px;
+    background-image: url("../../assets/entree2.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
 
+    @media (max-width: 1000px) {
+        height: 100%;
+    }
+
     img {
         cursor: pointer;
         height: 46px;
         width: 55px;
         position: fixed;
-        top: 5px;
-        left: 65px;
+        top: 2.7%;
+        right: 1.1%;
     }
 }
 
@@ -138,28 +143,37 @@ export default {
 .video_activate4 {
     z-index: 10;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(33, 33, 33, 0.76);
+    top: 2%;
+    left: 1%;
+    width: 98%;
+    height: 85%;
+    border-radius: 10px;
+    background: rgba(33, 33, 33, 0.96);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: height 0.5s ease-out;
+
+    @media (max-width: 1000px) {
+        height: 100%;
+    }
 
     img {
         cursor: pointer;
         height: 46px;
         width: 55px;
         position: fixed;
-        top: 60px;
-        left: 65px;
+        top: 2.7%;
+        right: 1.1%;
     }
 
     iframe {
         width: 50%;
         height: 70%;
+
+        @media (max-width: 1000px) {
+            width: 100%;
+            height: 50%;
+        }
     }
 }
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="text_chapter">
+    <div class="text_chapter_FC">
         <p><img src="../../assets/up-chevron1.svg"/>{{ text }} <img src="../../assets/up-chevron2.svg"/></p>
     </div>
 </template>
@@ -15,17 +15,45 @@ export default {
 </script>
 
 <style lang="scss">
-.text_chapter {
+.text_chapter_FC {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 30vh;
+    height: 30%;
     width: 100%;
-    background: rgba(33, 33, 33, 0.76);
+    border-radius: 10px;
+
+    p {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 33px;
+    color: #FFFFFF;
+    text-align: left;
+    width: 90%;
+
+        img {
+            @media (max-width: 750px) {
+                height: 15px;
+                width: 15px;
+            }
+        }
+
+        @media (max-width: 750px) {
+            font-size: 11px;
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 750px) {
+        height: 65vh;
+    }
 
     img {
         margin: 0 10px;
+        width: 15px;
     }
 }
 
@@ -61,14 +89,4 @@ $bg-and-border: #ffffff;
   }
 }
 
-p {
-    font-family: 'Metropolis';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 33px;
-    color: #FFFFFF;
-    text-align: left;
-    width: 81%;
-}
 </style>

@@ -1,9 +1,11 @@
 <template>
   <div class="navBar" @click="closeOverlay">
-    <router-link to="/"><img src="../assets/logowitz.png" alt="Witz" class="navBar__Witz" /></router-link>
+    <router-link to="/"><img src="../assets/logowitz.png" alt="Sound" class="navBar__Witz" /></router-link>
     <div class="navBar__container">
-      
-            <div
+      <div>
+        
+      </div>
+                  <div
         class="navBar__VolumeLogo"
         @click="toggleMute"
         :class="isMute ? 'isMute' : null">
@@ -15,19 +17,18 @@
       src="../assets/music/musikterrif.mp3">
         <img src="../assets/Audio.png" alt="Sound" class="navBar__Sound" />
     </audio>
-        
       </div>
       <nav class="navBar__timeLine">
-        <div>
+        <div @click="changePage(scroll * 10)" :class="page === 1 ? 'isSelected' : null">
           <a href="#chapter1">I - Discours d'Hitler devant le Reichstag  </a>
         </div>
-        <div>
+        <div @click="changePage(scroll * 20)" :class="page === 2 ? 'isSelected' : null">
           <a class="gang" href="#chapter2">II - Discours d'Himmler  devant le Reichstag </a>
         </div>
-        <div>
+        <div @click="changePage(scroll * 30)" :class="page === 3 ? 'isSelected' : null">
           <a href="#chapter3">III - Le début de l'enfer </a>
         </div>
-        <div>
+        <div @click="changePage(scroll * 40)" :class="page === 4 ? 'isSelected' : null">
           <a href="#chapter4">IV - Les portes de l'enfer  </a>
         </div>
       </nav>
@@ -37,6 +38,7 @@
 
 
 <script>
+
 
 export default {
   methods: {
@@ -49,7 +51,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <style lang="scss" scoped>

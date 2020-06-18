@@ -1,48 +1,36 @@
-# web1-endgame
+# WITZ. <img src="/logowitz.png">
 
-## Stack du projet
+## Présentation
 
-- Babel (es6 syntax)
-- Vue.js
-  - Vue Router
-- Sass
+Voici **WITZ.** le web documentaire qui retrace l'enfer qui s'est passé dans le camp de concentration Auschwitz-Birkenau. Vous pourrez retrouver des textes, des images ou des vidéos qui vous permettront de mieux comprendre ce qui est arrivé.
 
-## Route
+Accéder au [site](https://witz-documentaire.netlify.app)
 
-| url      | nom      |
-| ---      | ---      |
-| /        | Homepage |
-| /team    | Team     |
+## Commandes pour démarrer le projet
 
-## Command line pour démarrer le projet
-
-### Project setup
 ```
-yarn install
+git clone https://github.com/Idriss91130/web1-endgame.git
 ```
-
-### Compiles and hot-reloads for development
 ```
-yarn serve
+cd web1-endgame
 ```
-
-### Compiles and minifies for production
 ```
-yarn build
+npm install
 ```
-
-### Lints and fixes files
 ```
-yarn lint
+npm run serve
 ```
-
 ## Documentation
 
-https://vuejs.org/
+[VueJs](https://vuejs.org/)
 
-https://router.vuejs.org/
+[Router VueJs](https://router.vuejs.org/)
 
-https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf
+[Vue Cheatsheet](https://marozed.ma/vue-cheatsheet/)
 
-https://marozed.ma/vue-cheatsheet/
+## Participants du projet
 
+- CHAIMI Elyas
+- COHEN Baptiste
+- FALL Idriss
+- ROCHE Lucas

@@ -9,11 +9,21 @@
 
 <script>
 export default {
-  props: {
-    chapter: String,
-    title_chapter: String,
-    date: String
-  }
+    props: {
+        chapter: String,
+        title_chapter: String,
+        date: String
+    },
+    data: function (){
+        return {
+            info: null
+        }
+    },
+    mounted: {
+        // axios: 
+        //     .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+        //     .then(response => (this.info = response))
+    }
 }
 </script>
 
@@ -24,17 +34,32 @@ export default {
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
+
+        @media (max-width: 750px) {
+            height: 35vh;
+            width: 80%;
+        }
+
+        @media (max-width: 1000px) {
+            height: 35vh;
+            width: 60%;
+        }
     }
 
     h1 {
         font-family: 'EbrimaBold';
         font-style: normal;
         font-weight: bold;
-        font-size: 144px;
-        line-height: 150px;
+        font-size: 130px;
+        line-height: 140px;
         text-align: center;
         color: #FFFFFF;
         width: 100%;
+
+        @media (max-width: 750px) {
+            font-size: 80px;
+            line-height: 110px;
+        }
     }
 
     h2 {
@@ -46,6 +71,11 @@ export default {
         text-align: center;
         color: #FFFFFF;
         width: 100%;
+
+        @media (max-width: 750px) {
+            font-size: 18px;   
+            line-height: 24px;
+        }
     }
 
     h3 {
@@ -57,6 +87,11 @@ export default {
         text-align: center;
         color: #FFFFFF;
         width: 100%;
+
+        @media (max-width: 750px) {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 
     .line {
