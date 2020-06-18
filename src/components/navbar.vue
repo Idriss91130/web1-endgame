@@ -47,13 +47,14 @@ export default {
       toggleMute() {
       this.isMute = !this.isMute;
       this.$refs.audio.muted = !this.$refs.audio.muted;
+      }
   },
-   mounted() {
-    this.$refs.audio.volume = 0.2;
+    mounted () {
+    this.$refs.audio.volume = 0.1;
     }
-  }
 }
 </script>
+   
 
 <style lang="scss" scoped>
 
